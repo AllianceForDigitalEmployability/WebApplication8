@@ -40,5 +40,11 @@ namespace WebApplication8.Controllers
             string ss = "<!DOCTYPE html><html><body><h4>" + xyz + "</h4></body></html>";
             return ss; // View();
         }
+
+        public ActionResult User()
+        {
+            return View();
+        }
+
     }
 }
