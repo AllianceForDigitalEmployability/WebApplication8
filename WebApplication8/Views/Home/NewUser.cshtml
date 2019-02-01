@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "NewUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>NewUser</h2>
+<form method="post" action="/Home/InsertUser">
+    Name: <input type="text" name="name" />
+    Username: <input type="text" name="username" />
+    Password: <input type="password" name="password" />
+    <button type="submit">Insert to the Database</button>
+</form>
+

@@ -33,6 +33,16 @@ namespace WebApplication8.Controllers
             return View();
         }
 
+        public ActionResult NewUser()
+        {
+            return View();
+        }
+
+        public string InsertUser(string name, string username, string password)
+        {
+            return name+" " + username + " " + password;
+        }
+
         private List<WebApplication7.Models.User> GetUsers()
         {
             List<WebApplication7.Models.User> theUsers = new List<WebApplication7.Models.User>();
