@@ -27,8 +27,9 @@ namespace WebApplication8.Controllers
         public ActionResult User()
         {
             users = GetUsers();
-            //ViewBag.theUsers = users;
-            ViewBag.user = users[1].ToString();
+            ViewBag.theUsers = users;
+            ViewBag.xxx = "XXX";
+            ViewBag.user = users[1]; // .ToString();
             return View();
         }
 

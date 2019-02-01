@@ -9,3 +9,7 @@
 <h2>Users</h2>
 <br />
 <div><ul><li>@ViewBag.user</li></ul></div>
+@foreach( var user in ViewBag.theUsers)
+{
+    <p>id: @user.id&#9; name: @user.name&#9; username: @user.username&#9; password: @user.password</p>  
+}
